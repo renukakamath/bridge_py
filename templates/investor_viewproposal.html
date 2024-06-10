@@ -1,0 +1,68 @@
+{% include 'investor_header.html'%}
+
+<!-- banner -->
+<div class="banner" id="home">
+	<div class="layer">
+		<div class="container">
+			<div class="banner-text-w3pvt">
+				<!-- banner slider-->
+				<div class="csslider infinity" id="slider1">
+					
+					<ul class="banner_slide_bg">
+						
+						<li>
+							<div class="w3ls_banner_txt">
+
+
+
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+				<!-- //banner slider-->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+
+<center>
+	<h1 style="color: black">View Stories</h1>
+	<table class="table" style="width: 500px;color: black">
+		<tr>
+			<th>Slno</th>
+			<th>Idea</th>
+		
+	
+		<th>Amount </th>
+		<th>Date</th>
+		<th>Status</th>
+		
+		
+
+		</tr>
+		{% for row in data['varientview']%}
+		<tr>
+			<td>{{loop.index}}</td>
+			
+			<td>{{row['name']}}</td>
+	
+			<td>{{row['amount']}}</td>
+			<td>{{row['date']}}</td>
+			<td>{{row['status']}}</td>
+			
+			
+			
+
+		</tr>
+
+		{%endfor %}
+	</table>
+</center>
+</div>
+            </div>
+        </div>
+    </div>
+    <!--//main-banner-->  
+{% include 'footer.html'%}

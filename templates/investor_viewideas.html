@@ -1,0 +1,79 @@
+{% include 'investor_header.html'%}
+
+<!-- banner -->
+<div class="banner" id="home">
+	<div class="layer">
+		<div class="container">
+			<div class="banner-text-w3pvt">
+				<!-- banner slider-->
+				<div class="csslider infinity" id="slider1">
+					
+					<ul class="banner_slide_bg">
+						
+						<li>
+							<div class="w3ls_banner_txt">
+
+
+
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+				<!-- //banner slider-->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+
+<center>
+	<h1 style="color: black">View Ideas</h1>
+	<table class="table" style="width: 500px;color: black">
+		<tr>
+			<th>Slno</th>
+			<th>User Name</th>
+			<th>Idea</th>
+		
+		<th>Category</th>
+		<th>Experence </th>
+		<th>skill</th>
+		<th>Date</th>
+		<th>Status</th>
+		
+		
+
+		</tr>
+		{% for row in data['idea']%}
+		<tr>
+			<td>{{loop.index}}</td>
+			<td>{{row['fname']}}</td>
+			
+			<td>{{row['name']}}</td>
+				
+			
+			<td>{{row['category']}}</td>
+			<td>{{row['experence']}}</td>
+
+			<td>{{row['skill']}}</td>
+				
+			
+			
+			<td>{{row['date']}}</td>
+			<td>{{row['status']}}</td>
+			<td><a class="btn btn-success" href="investor_viewuser?uid={{row['user_id']}}">View User</a></td>
+			<td><a class="btn btn-success" href="investor_sendproposal?iid={{row['idea_id']}}">Send proposal</a></td>
+			
+			
+
+		</tr>
+
+		{%endfor %}
+	</table>
+</center>
+</div>
+            </div>
+        </div>
+    </div>
+    <!--//main-banner-->  
+{% include 'footer.html'%}

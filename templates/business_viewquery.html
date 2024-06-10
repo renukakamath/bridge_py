@@ -1,0 +1,67 @@
+{% include 'business_header.html'%}
+
+
+
+<!-- banner -->
+<div class="banner" id="home">
+	<div class="layer">
+		<div class="container">
+			<div class="banner-text-w3pvt">
+				<!-- banner slider-->
+				<div class="csslider infinity" id="slider1">
+					
+					<ul class="banner_slide_bg">
+						
+						<li>
+							<div class="w3ls_banner_txt">
+
+
+
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+				<!-- //banner slider-->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+
+<center>
+	<h1 style="color: black">View Query</h1>
+	<table class="table" style="width: 500px;color: black">
+		<tr>
+			<th>Slno</th>
+			<th>User</th>
+		
+		<th>Query</th>
+		<th>Date </th>
+		
+		
+
+		</tr>
+		{% for row in data['query']%}
+		<tr>
+			<td>{{loop.index}}</td>
+			<td>{{row['fname']}}</td>
+			
+			<td>{{row['query']}}</td>
+				
+		
+			<td>{{row['date']}}</td>
+			<td><a class="btn btn-success" href="business_postsolution?qid={{row['query_id']}}">Post Solutions</a></td>
+			
+
+		</tr>
+
+		{%endfor %}
+	</table>
+</center>
+</div>
+            </div>
+        </div>
+    </div>
+    <!--//main-banner-->  
+{% include 'footer.html'%}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_addquery.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_complaints.xml" value="0.11141304347826086" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_ipsettings.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_login.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_main.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_messages.xml" value="0.11141304347826086" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_postmyideas.xml" value="0.12" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_registration.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_userhome.xml" value="0.22" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_viewbusiness.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_viewloandetails.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_viewnews.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_viewoffers.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_viewproposals.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_viewsolutions.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/activity_viewstories.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/cust_images.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/cust_images1.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/cust_images2.xml" value="0.11141304347826086" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/bridge/app/src/main/res/layout/custtext.xml" value="0.12590579710144928" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

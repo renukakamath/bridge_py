@@ -1,0 +1,84 @@
+{% include 'banker_header.html'%}
+
+
+<!-- banner -->
+<div class="banner" id="home">
+	<div class="layer">
+		<div class="container">
+			<div class="banner-text-w3pvt">
+				<!-- banner slider-->
+				<div class="csslider infinity" id="slider1">
+					
+					<ul class="banner_slide_bg">
+						
+						<li>
+							<div class="w3ls_banner_txt">
+<center>
+	<h1 style="color: white">Add Loan</h1>
+	<form method="post" enctype="multipart/form-data">
+		<table class="table" style="width: 500px;color: white">
+			<tr>
+				<th>Loan Details</th>
+				<td><input type="text" required="" class="form-control" name="details"></td>
+			</tr>
+				<tr>
+				<th>No OF Days</th>
+				<td><input type="text" required="" class="form-control" name="days"></td>
+			</tr>
+			<tr>
+				<th>Amount</th>
+				<td><input type="text" required="" class="form-control" name="Amount"></td>
+			</tr>
+			<tr>
+				<th>Monthly Amount</th>
+				<td><input type="text" required="" class="form-control" name="mAmount"></td>
+			</tr>
+			<tr>
+				<th>Papers</th>
+				<td><input type="file" required="" class="form-control" name="img"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit" class="btn btn-success" name="add"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+
+
+
+	
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+				<!-- //banner slider-->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+<center>
+	<h1>View Loans</h1>
+	<table class="table" style="width: 500px;color: black">
+		<tr>
+			<th>Loan Details</th>
+			<th>No OF Days</th>
+				<th>Amount</th>
+				<th>Monthly Amount</th>
+				<th>Papers</th>
+		</tr>
+		{% for row in data['varientview']%}
+		<tr>
+			<td>{{row['loandetails']}}</td>
+			<td>{{row['noofdays']}}</td>
+			<td>{{row['amount']}}</td>
+			<td>{{row['monthlyamount']}}</td>
+			<td><a href="{{row['papers']}}"><img src="/{{row['papers']}}" width="100" height="100"></a></td>
+		</tr>
+
+		{% endfor %}
+	</table>
+</center>
+
+{% include 'footer.html'%}

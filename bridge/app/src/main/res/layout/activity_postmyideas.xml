@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/back"
+
+    android:orientation="vertical"
+    tools:context=".Postmyideas">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Ideas"
+        android:textColor="#020202"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="149dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint=" name"
+        android:inputType="textPersonName"
+        android:textColor="#020202"
+        android:textColorHint="#020202"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="586dp" />
+
+
+    <EditText
+        android:id="@+id/cateory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="enter category"
+        android:inputType="textPersonName"
+        android:textColor="#020202"
+        android:textColorHint="#020202"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <EditText
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="enter experience"
+        android:inputType="textPersonName"
+        android:textColor="#020202"
+        android:textColorHint="#020202"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="57dp" />
+
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="enter your skill"
+        android:inputType="textEmailAddress"
+        android:textColor="#020202"
+        android:textColorHint="#020202"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="516dp" />
+
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textColor="#020202"
+        android:textColorHint="#020202"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="647dp" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+{% include 'admin_header.html'%}
+
+
+
+<!-- banner -->
+<div class="banner" id="home">
+	<div class="layer">
+		<div class="container">
+			<div class="banner-text-w3pvt">
+				<!-- banner slider-->
+				<div class="csslider infinity" id="slider1">
+					
+					<ul class="banner_slide_bg">
+						
+						<li>
+							<div class="w3ls_banner_txt">
+
+<center>
+	<h1 style="color: black">Manage news</h1>
+	<form method="post">
+		{% if data['newsup']%}
+		<table class="table" style="width: 500px;color: black">
+		<tr>
+			<th>news</th>
+			<td><input type="text" required="" class="form-control" value="{{data['newsup'][0]['news']}}" name="news"></td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2"><input type="submit" class="btn btn-success" name="update"></td>
+		</tr>
+	</table>
+	{% else %}
+	<table class="table" style="width: 500px;color: black">
+		<tr>
+			<th>news</th>
+			<td><input type="text" required="" class="form-control" name="news"></td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2"><input type="submit" class="btn btn-success" name="addnews"></td>
+		</tr>
+	</table>
+	{% endif %}
+	</form>
+</center>
+
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+				<!-- //banner slider-->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+<center>
+	<h1>View news</h1>
+	<table class="table" style="width: 500px">
+		<tr>
+			<th>Slno</th>
+			<th>news</th>
+
+		</tr>
+		{% for row in data['newsview']%}
+		<tr>
+			<td>{{loop.index}}</td>
+			<td>{{row['news']}}</td>
+			<td><a class="btn btn-success" href="?action=delete&vid={{row['news_id']}}">delete</a></td>
+			<td><a class="btn btn-success" href="?action=update&vid={{row['news_id']}}">Update</a></td>
+		</tr>
+
+		{%endfor %}
+	</table>
+</center>
+{% include 'footer.html'%}

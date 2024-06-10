@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/back"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Userhome">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME \n   USER"
+        android:textStyle="bold"
+        android:textColor="#020202"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/offers"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="View offers" />
+
+
+    <Button
+        android:id="@+id/rules"
+        android:layout_width="300dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="View business" />
+
+
+    <Button
+        android:id="@+id/bcases"
+        android:layout_width="300dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="View news" />
+
+    <Button
+        android:id="@+id/rate"
+        android:layout_width="300dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Post my ideas" />
+
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="View Proposal" />
+
+
+        <Button
+            android:id="@+id/master"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Add Query" />
+
+
+        <Button
+            android:id="@+id/traffic"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="View Loan Details" />
+
+    <Button
+        android:id="@+id/message"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Send Feedback" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="300dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="LOGOUT" />
+
+
+</LinearLayout>
